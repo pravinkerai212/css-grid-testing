@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid Course</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container .one {
+            background-color: #B71C1C;
+        }
+        .container .two {
+            background-color: #880E4F;
+        }
+        .container .three {
+            background-color: #4A148C;
+        }
+        .container .four {
+            background-color: #006064;
+        }
+        .container .five {
+            background-color: #33691E;
+        }
+        .container .six {
+            background-color: #E65100;
+        }
+        .container {
+            font-size: 3em;
+            display: grid;
+            grid-template: repeat(2, 100px) / repeat(3, 1fr);
+            grid-gap: 3px;
+            color: white;
+            text-align: center;
+            padding-top: 1em;
+            margin-top: 1em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+    </div>
+</body>
+</html>
